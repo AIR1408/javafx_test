@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="268.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Task3Controller">
+   <children>
+      <TableView fx:id="tvTask3" layoutX="10.0" layoutY="14.0" prefHeight="210.0" prefWidth="580.0">
+         <columns>
+            <TableColumn fx:id="detId" prefWidth="66.0" text="Код дет" />
+            <TableColumn fx:id="opId" prefWidth="57.0" text="Код оп" />
+            <TableColumn fx:id="profId" text="Код проф" />
+            <TableColumn fx:id="profLevel" prefWidth="100.0" text="Квал.разряд" />
+            <TableColumn fx:id="tarifId" prefWidth="95.0" text="Код тарифа" />
+            <TableColumn fx:id="prePostTime" prefWidth="110.0" text="Подг-закл. вр" />
+            <TableColumn fx:id="timePerPiece" prefWidth="68.0" text="Вр.штуч" />
+         </columns>
+      </TableView>
+      <ChoiceBox fx:id="cbVar3" layoutX="14.0" layoutY="230.0" prefHeight="24.0" prefWidth="47.0" />
+      <Button fx:id="btnShowTask3" layoutX="256.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="24.0" prefWidth="88.0" text="Показать" />
+      <TextField fx:id="tfPrice" layoutX="72.0" layoutY="230.0" prefHeight="24.0" prefWidth="81.0" />
+      <TextField fx:id="tfNorm" layoutX="164.0" layoutY="230.0" prefHeight="24.0" prefWidth="81.0" />
+   </children>
+</AnchorPane>

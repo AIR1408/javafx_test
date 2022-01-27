@@ -1,0 +1,27 @@
+-- CREATE TABLE materials(
+--     mtl_id int NOT NULL CONSTRAINT PK_MTL_ID PRIMARY KEY,
+--     mtl_name varchar(50),
+--     mtl_uom varchar(5) DEFAULT('шт'),
+--     mtl_price DECIMAL(8, 2) CHECK(mtl_price > 0) 
+-- );
+
+-- CREATE TABLE labor_norms(
+--     det_id int NOT NULL,
+--     op_id int NOT NULL,
+--     prof_id int NOT NULL,
+--     prof_level int,
+--     tarif_id int,
+--     pre_post_time int, 
+--     time_per_piece int,
+--     CONSTRAINT PK_DO PRIMARY KEY(det_id, op_id)
+-- );
+
+-- CREATE TABLE mtl_norms(
+--     det_id int,
+--     mtl_id int CONSTRAINT FK_MTL_ID REFERENCES materials
+--     ON DELETE CASCADE ON UPDATE CASCADE,
+--     op_id int,
+--     uom varchar(5),
+--     norm DECIMAL(8, 2),
+--     CONSTRAINT FK_DO FOREIGN KEY(det_id, op_id) REFERENCES labor_norms
+-- )
