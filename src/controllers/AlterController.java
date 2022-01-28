@@ -16,7 +16,7 @@ import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.util.converter.FloatStringConverter;
 import javafx.util.converter.IntegerStringConverter;
 
-import items.*;
+import items.AltItem;
 import connectors.*;
 
 public class AlterController implements Initializable {

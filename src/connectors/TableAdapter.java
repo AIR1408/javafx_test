@@ -4,13 +4,15 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import java.util.HashSet;
-import java.util.Set;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
-import items.*;
+import items.AltItem;
+import items.LaborNorm;
+import items.Material;
+import items.MtlNorm;
+import items.TaskItem;
 
 public class TableAdapter {
     private Connection conn;
@@ -98,8 +100,8 @@ public class TableAdapter {
         return mtls;
     }
 
-    public Set<AltItem> getAlterTable(){
-        Set<AltItem> altTable = new HashSet();
+    public ObservableList<AltItem> getAlterTable(){
+        ObservableList<AltItem> altTable = FXCollections.observableArrayList();
         String query = "SELECT * FROM materials RIGHT JOIN mtl_norms mn ON materials.mtl_id = mn.mtl_id " +
             "LEFT JOIN labor_norms ln ON mn.det_id = ln.det_id AND mn.op_id = ln.op_id;";
         try {

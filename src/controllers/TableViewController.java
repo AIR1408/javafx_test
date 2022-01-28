@@ -19,7 +19,7 @@ import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.util.converter.FloatStringConverter;
 import javafx.util.converter.IntegerStringConverter;
 
-import items.*;
+import items.AltItem;
 
 public class TableViewController implements Initializable{
     @FXML TableView<AltItem> tvView;

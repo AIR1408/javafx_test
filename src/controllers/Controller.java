@@ -25,7 +25,9 @@ import javafx.stage.Stage;
 import javafx.util.converter.FloatStringConverter;
 import javafx.util.converter.IntegerStringConverter;
 
-import items.*;
+import items.Material;
+import items.MtlNorm;
+import items.LaborNorm;
 import connectors.*;
 
 public class Controller implements Initializable {

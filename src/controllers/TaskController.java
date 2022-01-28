@@ -21,7 +21,9 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import connectors.*;
-import items.*;
+import items.Material;
+import items.MtlNorm;
+import items.TaskItem;
 
 public class TaskController implements Initializable {
     private int variant;

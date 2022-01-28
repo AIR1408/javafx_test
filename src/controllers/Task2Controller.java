@@ -20,8 +20,9 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-
-import items.*;
+import items.Material;
+import items.MtlNorm;
+import items.Task2Item;
 
 public class Task2Controller implements Initializable{
     @FXML TableView<Task2Item> tvTask2;

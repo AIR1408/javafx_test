@@ -21,7 +21,9 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.util.converter.IntegerStringConverter;
 
-import items.*;
+import items.LaborNorm;
+import items.Material;
+import items.MtlNorm;
 
 public class Task3Controller implements Initializable{
     @FXML TableView<LaborNorm> tvTask3;
