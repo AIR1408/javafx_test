@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Task2Controller">
+   <children>
+      <TableView fx:id="tvTask2" layoutX="33.0" layoutY="31.0" prefHeight="332.0" prefWidth="241.0">
+        <columns>
+          <TableColumn fx:id="colDetId" prefWidth="97.0" text="Код детали" />
+          <TableColumn fx:id="colTotalCost" prefWidth="142.0" text="Общая стоимость" />
+        </columns>
+      </TableView>
+      <ChoiceBox fx:id="cbVar2" layoutX="284.0" layoutY="31.0" prefHeight="24.0" prefWidth="48.0" />
+      <Button fx:id="btnShowTask2" layoutX="284.0" layoutY="65.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="24.0" prefWidth="87.0" text="Показать" />
+   </children>
+</AnchorPane>

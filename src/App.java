@@ -18,7 +18,7 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Thread.setDefaultUncaughtExceptionHandler(App::showError);
-        Parent root = FXMLLoader.load(getClass().getResource("table.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/table.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.setTitle("Tables");

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TaskController">
+   <children>
+      <TableView fx:id="tvTask1" layoutX="23.0" layoutY="36.0" prefHeight="200.0" prefWidth="537.0">
+        <columns>
+          <TableColumn fx:id="taskOpId" prefWidth="117.0" text="Код операции" />
+          <TableColumn fx:id="taskMtlName" minWidth="0.0" prefWidth="152.0" text="Имя материала" />
+            <TableColumn fx:id="taskDetId" prefWidth="109.0" text="Код детали" />
+            <TableColumn fx:id="taskNorm" prefWidth="131.0" text="Нормы расхода" />
+        </columns>
+      </TableView>
+      <TextField fx:id="tfTask1" layoutX="23.0" layoutY="273.0" prefHeight="26.0" prefWidth="111.0" />
+      <Label layoutX="23.0" layoutY="14.0" prefHeight="18.0" prefWidth="135.0" text="Задача 1" />
+      <Button fx:id="btnTask1" layoutX="138.0" layoutY="275.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="24.0" prefWidth="82.0" text="Показать" />
+   </children>
+</AnchorPane>
